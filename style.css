@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  --bg-color: hsl(223, 100%, 96%);
+  --text-color:hsl(230, 100%, 9%);
+  --primary-color:hsl(228, 81%, 59%);
+  --primary-color-dark:hsl(230, 57%, 50%);
+}
+body.dark-blue {
+  --bg-color:hsl(230, 100%, 9%);
+  --text-color:hsl(0, 0%, 100%);
+}
+
+body.pink {
+  --bg-color:hsl(336, 100%, 97%);
+  --text-color:hsl(339, 100%, 6%);
+  --primary-color:hsl(339, 67%, 52%);
+  --primary-color-dark:hsl(345, 69%, 38%);
+}
+
+body.dark-pink {
+  --bg-color:hsl(339, 100%, 6%);
+  --text-color:hsl(0, 0%, 100%);
+  --primary-color:hsl(339, 67%, 52%);
+  --primary-color-dark:hsl(339, 69%, 38%);
+}
+
+a {
+  text-decoration: none;
+
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Roboto', sans-serif;
+}
+/* Todo meu conteúdo dentro de uma caixa */
+.container {
+  
+  text-align: center;
+  width: 300px;
+  margin: 60px auto;
+}
+/* Configurações de imagem */
+img {
+  width: 100%;
+}
+img.avatar {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  padding: 3.7px;
+  border: var(--primary-color) solid 4px;
+}
+
+/* configurando a distância entre a imagem e o título */
+h1 {
+  font-size: 32px;
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+p {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 400;
+  opacity: 0.5;
+  font-size: 18px;
+}
+/* configuração para tirar os ponto que fica ao lado do nome e colocando uma distância entre o conteúdo de lista e o rodapé */
+ul {
+  list-style: none;
+  margin: 48px 0;
+}
+/* configuração dentro da caixa de lista */
+ul li a {
+  height: 53px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary-color);
+  color: white;
+  text-transform: uppercase;
+  font-size: 14px;
+
+  margin-bottom: 16px;
+  border-radius: 6px;
+
+  transition: background 400ms;
+}
+/* pseudo-class, consigo alterar a cor de fundo ao passar a setinha do mouse em cima */
+ul li a:hover {
+  background: var(--primary-color-dark);
+}
+/* configuração do rodapé */
+footer {
+  font-weight: 500;
+  font-size: 12px;
+  opacity: 0.6;
+  transition: opacity 400ms;
+}
+footer:hover {
+  opacity: 1;
+}
+footer a {
+  color: var(--dark-blue);
+}
